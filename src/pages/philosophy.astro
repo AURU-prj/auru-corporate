@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets'; import BaseLayout from '@/layouts/BaseLayout.astro'; import reflection from '@/assets/auru-reflection.png';
+---
+<BaseLayout title="Philosophy — AURU" description="AURUのPhilosophy、Mission、Vision、Values。心が動く方へ。">
+<section class="page-top wrap"><div class="eyebrow">01 / philosophy</div><h1>philosophy</h1><p class="dek">心が動く方へ。<br />自分の感覚を信じることから、新しい価値は始まると考えています。</p></section><div class="photo page-image"><Image src={reflection} alt="光の反射" widths={[640,960,1440,1920]} sizes="100vw" /></div>
+<section class="chapter"><div class="wrap chapter-grid"><div class="eyebrow">philosophy</div><h2>心が動く方へ。</h2><div class="copy">「好き」「気になる」「やってみたい」。そんな心の動きを、大切にしたい。ときめくものに出会うこと。ときめく人と出会うこと。自分の感覚を信じて、何かを選ぶこと。小さな心の動きが、毎日を少し豊かにし、ときには人生を動かしていく。AURUは、人の心を動かすものをつくり、つなぎ、育てることで、心が潤う瞬間を増やしていきます。</div></div></section>
+<section class="chapter"><div class="wrap chapter-grid"><div class="eyebrow">mission</div><h2>ときめきを、<br />かたちにする。</h2><div class="copy">まだ世の中にないものも、誰かの中に眠っている想いも、私たち自身が心を動かされたものも。ファッション、ブランド、場所、仕組み。さまざまなかたちを通して、社会へ届けていく。</div></div></section>
+<section class="chapter"><div class="wrap chapter-grid"><div class="eyebrow">vision</div><h2>ときめきで、<br />心が潤う世界へ。</h2><div class="copy">毎日の中に、心が動くものがある。自分の感覚を大切にできる。誰かの「好き」が、別の誰かの「好き」につながっていく。人、もの、想いが行き交い、新しいときめきが生まれていく世界を目指します。</div></div></section>
+<section class="values wrap"><div class="eyebrow">our values</div><div class="value"><span>01</span><div><h3>Follow Your Heart</h3><div class="jp">心が動く方へ。</div></div><p class="copy">自分たちの感覚に正直でいる。心が動いた理由を見つめ、それを新しい価値へ変えていく。</p></div><div class="value"><span>02</span><div><h3>Create</h3><div class="jp">ときめきを、かたちに。</div></div><p class="copy">想像するだけで終わらせない。プロダクト、ブランド、体験、仕組みとして、この世界に存在させる。</p></div><div class="value"><span>03</span><div><h3>Connect</h3><div class="jp">ときめきを、つなぐ。</div></div><p class="copy">人と人、つくる人と使う人、異なる場所や文化。出会わなければ交わらなかったものをつなぐ。</p></div></section>
+</BaseLayout>

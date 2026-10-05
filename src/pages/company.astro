@@ -1,0 +1,6 @@
+---
+import { Image } from 'astro:assets'; import BaseLayout from '@/layouts/BaseLayout.astro'; import { site } from '@/config/site'; import sunset from '@/assets/auru-sunset.png';
+---
+<BaseLayout title="Company — AURU" description="株式会社AURUの会社概要。ブランド、ファッション、プラットフォーム、クリエイティブの領域で事業を展開します。">
+<section class="page-top wrap"><div class="eyebrow">03 / company</div><h1>company</h1><p class="dek">AURUは、人の心が動くものを、つくり、つなぎ、育てていく会社です。</p></section><div class="photo page-image"><Image src={sunset} alt="夕暮れの空と水辺" widths={[640,960,1440,1920]} sizes="100vw" /></div><section class="wrap company-lead"><h2>心が動くものから、<br />事業をつくる。</h2><p class="copy">ブランド、ファッション、プラットフォーム、クリエイティブ。領域を先に決めるのではなく、私たち自身が心を動かされたものを起点に、社会へ届けるかたちを考えます。</p></section><section class="outline wrap"><div class="eyebrow outline-title">outline</div><div class="row"><div class="key">Company</div><div>{site.legalName} / {site.name}</div></div><div class="row"><div class="key">Founded</div><div>{site.founded}</div></div><div class="row"><div class="key">Representative</div><div>{site.representative}</div></div><div class="row"><div class="key">Business</div><div>{site.business}</div></div><div class="row"><div class="key">Contact</div><div><a href={`mailto:${site.email}`}>{site.email}</a></div></div></section>
+</BaseLayout>

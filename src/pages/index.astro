@@ -1,0 +1,14 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import sunset from '@/assets/auru-sunset.png';
+import reflection from '@/assets/auru-reflection.png';
+import siuChair from '@/assets/siu-chair.png';
+---
+<BaseLayout title="AURU Inc. — 心が動く方へ。">
+<section class="hero"><Image src={sunset} alt="夕暮れの空と水辺" widths={[640,960,1440,1920]} sizes="100vw" loading="eager" fetchpriority="high" /><div class="hero-copy"><h1>心が動く方へ。</h1><p>AURU INC. / TOKYO, JAPAN</p></div><div class="counter">scroll</div></section>
+<section class="section wrap home-intro"><div class="eyebrow">philosophy</div><h2 class="reveal">人の心が動くものを、<br />つくり、つなぎ、育てていく。</h2><div class="copy reveal">「好き」「気になる」「やってみたい」。そんな小さな心の動きを大切にする。AURUは、人の心を動かすものをつくり、つなぎ、育てることで、心が潤う瞬間を増やしていきます。<br /><a class="view" href="/philosophy">View Philosophy <span>→</span></a></div></section>
+<div class="photo wide-photo reveal"><Image src={reflection} alt="光の反射" widths={[640,960,1440,1920]} sizes="(max-width:700px) calc(100vw - 40px), min(calc(100vw - 80px),1500px)" /></div>
+<section class="section wrap"><div class="split"><div class="copybox reveal"><div class="eyebrow">projects</div><h2>ときめきを、<br />かたちにする。</h2><p class="copy">ファッション、ブランド、場所、仕組み。さまざまなかたちを通して、まだ世の中にないものを社会へ届けていく。</p><a class="view" href="/projects">View Projects <span>→</span></a></div><div class="photo portrait reveal"><Image src={siuChair} alt="Siuのジャケットと青い花" widths={[480,720,960,1200]} sizes="(max-width:700px) calc(100vw - 40px), 50vw" /></div></div><div class="project-index"><a class="project-line" href="/projects#siu"><span class="n">01</span><h3>Siu</h3><span class="kind">Fashion Brand</span><span class="arrow">→</span></a><a class="project-line" href="/projects#filo"><span class="n">02</span><h3>Filo</h3><span class="kind">Fashion Platform / Project</span><span class="arrow">→</span></a></div></section>
+<section class="section wrap company-home"><div class="eyebrow">company</div><h2 class="reveal">AURU Inc.</h2><div class="copy reveal">感性を起点に、ブランド、プロダクト、場所、仕組みを生み出していく会社です。<br /><a class="view" href="/company">View Company <span>→</span></a></div></section>
+</BaseLayout>
